@@ -12,6 +12,58 @@ body {
   background-color: #fdfdfd;
 }
 
+/* ================= HERO SECTION ================= */
+#home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Photo wrapper with gradient ring */
+.hero-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(135deg, #111, #555);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  margin-bottom: 25px;
+  transition: transform 0.3s ease;
+}
+
+/* Image + SVG */
+.hero-photo img,
+.hero-photo svg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #f4f4f4;
+}
+
+/* Hide SVG unless image fails */
+.avatar-fallback {
+  display: none;
+}
+
+/* Hover effect */
+.hero-photo:hover {
+  transform: scale(1.06);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .hero-photo {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+
 /* ---------- HEADER & NAV ---------- */
 header {
   background: #111;
