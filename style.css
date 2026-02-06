@@ -60,6 +60,11 @@ nav ul {
     z-index: 1000;
   }
 
+   .hamburger {
+    display: flex;
+  }
+}
+
   nav ul.show {
     display: flex;          /* show nav when hamburger clicked */
   }
