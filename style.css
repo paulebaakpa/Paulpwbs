@@ -193,3 +193,58 @@ footer {
     padding: 2rem;
   }
 }
+
+/* ================= DROPDOWN GROUP ================= */
+
+.dropdown-group {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.dropdown-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.dropdown-header {
+  width: 100%;
+  background: black;
+  color: #fff;
+  border: none;
+  padding: 15px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-header:hover {
+  background: #222;
+}
+
+.dropdown-body {
+  display: none;
+  padding: 15px 18px;
+  background: #fff;
+}
+
+.arrow {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Active state */
+.dropdown-item.active .dropdown-body {
+  display: block;
+}
+
+.dropdown-item.active .arrow {
+  transform: rotate(45deg);
+}
+
