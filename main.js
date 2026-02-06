@@ -30,6 +30,7 @@ document.querySelectorAll('.dropdown-header').forEach(header => {
   });
 });
 
+// ---------- DROPDOWN ACCORDION ----------
 document.querySelectorAll('.dropdown-header').forEach(header => {
   header.addEventListener('click', () => {
     document.querySelectorAll('.dropdown-item').forEach(item => {
@@ -39,5 +40,13 @@ document.querySelectorAll('.dropdown-header').forEach(header => {
     });
     header.parentElement.classList.toggle('active');
   });
+});
+
+// ---------------- HAMBURGER MENU ----------------
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
 });
 

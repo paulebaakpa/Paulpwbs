@@ -23,6 +23,48 @@ body {
   padding: 40px 20px;
 }
 
+
+/* ---------- HAMBURGER MENU ---------- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #fff;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+/* ---------- NAV ---------- */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Mobile nav */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;          /* hide nav by default on mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #111;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 200px;
+    z-index: 1000;
+  }
+
+  nav ul.show {
+    display: flex;          /* show nav when hamburger clicked */
+  }
+}
+
 /* Photo wrapper with gradient ring */
 .hero-photo {
   width: 180px;
