@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paul Austin | Personal Website</title>
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- ================= HEADER / NAV ================= -->
+  <header>
+  <nav>
+    <h2>Paul Austin</h2>
+
+    <!-- Hamburger -->
+     <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+
+     </div>
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li> <!-- <-- Here -->
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- ================= HOME ================= -->
+  <section id="home">
+  <div class="hero-photo">
+  <img 
+    src="images/images-2.png" 
+    alt="Paul Austin"
+    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+
+  <!-- SVG fallback avatar -->
+  <svg class="avatar-fallback" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="100" cy="100" r="100" fill="#eaeaea"/>
+    <circle cx="100" cy="75" r="35" fill="#bbb"/>
+    <path d="M40 165c10-35 110-35 120 0" fill="#bbb"/>
+  </svg>
+</div>
+
+    
+    <h1>Paul Austin</h1>
+    <p>Front-End Web Developer & Research-Focused Thinker</p>
+
+    <p>
+      I build clean, functional, and meaningful digital experiences
+      using modern web technologies.
+    </p>
+
+    <a href="#projects">View Projects</a>
+    <a href="#contact">Contact Me</a>
+
+    <div class="dropdown-group">
+
+  <div class="dropdown-item">
+    <button class="dropdown-header">
+      About This Site
+      <span class="arrow">+</span>
+    </button>
+    <div class="dropdown-body">
+      <p>
+        This website showcases my work as a front-end developer and
+        research-focused thinker. It is designed to be clean, simple,
+        and purposeful.
+      </p>
+    </div>
+  </div>
+
+  <div class="dropdown-item">
+    <button class="dropdown-header">
+      Featured Projects
+      <span class="arrow">+</span>
+    </button>
+    <div class="dropdown-body">
+      <ul>
+        <li>8 Stages of Life Website</li>
+        <li>Research-Based Web Pages</li>
+        <li>Personal Portfolio</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="dropdown-item">
+    <button class="dropdown-header">
+      Contact Info
+      <span class="arrow">+</span>
+    </button>
+    <div class="dropdown-body">
+      <p>Email: paulaustin486@gmail.com</p>
+      <p>Location: Nigeria</p>
+    </div>
+  </div>
+
+</div>
+
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about">
+
+  <div class="dropdown-item">
+    <button class="dropdown-header">
+      About Me
+      <span class="arrow">+</span>
+    </button>
+
+    <div class="dropdown-body">
+      <p>
+        Hi, I'm <strong>Paul Austin</strong>  a front-end web developer and
+        research-focused thinker.
+      </p>
+
+      <p>
+        I build clean, functional websites using HTML, CSS, and JavaScript,
+        focusing on clarity, usability, and structure.
+      </p>
+
+      <p>
+        I'm interested in projects that combine technology, research, and
+        real-world problem-solving, and I'm constantly improving my skills
+        in responsive design and interactive web development.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <article>
+      <h3>8 Stages of Life Website</h3>
+      <p>
+        An educational website that presents the stages of human development
+        using structured content and interactive cards.
+      </p>
+      <p><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+    </article>
+
+    <article>
+      <h3>Research-Based Web Pages</h3>
+      <p>
+        A collection of structured research content presented through clean,
+        readable web layouts.
+      </p>
+      <p><strong>Tools:</strong> HTML, CSS</p>
+    </article>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+
+    <p>
+      If you'd like to collaborate, discuss ideas, or just say hello,
+      feel free to reach out.
+    </p>
+
+    <p>Email: <a href="mailto:paulaustin486@gmail.com">paulaustin486@gmail.com</a></p>
+
+    <form>
+      <label>
+        Name:<br>
+        <input type="text" name="name">
+      </label><br><br>
+
+      <label>
+        Email:<br>
+        <input type="email" name="email">
+      </label><br><br>
+
+      <label>
+        Message:<br>
+        <textarea name="message" rows="5"></textarea>
+      </label><br><br>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2026 Paul Austin. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+ 
+
+</body>
+</html>

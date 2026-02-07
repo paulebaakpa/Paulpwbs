@@ -1,0 +1,284 @@
+/* ---------- RESET & BASIC STYLE ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fdfdfd;
+}
+
+/* ================= HERO SECTION ================= */
+#home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+
+/* Photo wrapper with gradient ring */
+.hero-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(135deg, #111, #555);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  margin-bottom: 25px;
+  transition: transform 0.3s ease;
+}
+
+/* Image + SVG */
+.hero-photo img,
+.hero-photo svg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #f4f4f4;
+}
+
+/* Hide SVG unless image fails */
+.avatar-fallback {
+  display: none;
+}
+
+/* Hover effect */
+.hero-photo:hover {
+  transform: scale(1.06);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .hero-photo {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+
+/* ---------- HEADER & NAV ---------- */
+header {
+  background: #111;
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+nav h2 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 0.7rem;
+}
+
+/* -------- HAMBURGER -------- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #fff;
+  margin: 4px 0;
+}
+
+/* -------- MOBILE NAV -------- */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #111;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 200px;
+    z-index: 1000;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+} 
+
+/* ---------- SECTIONS ---------- */
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  border: 1px solid #ddd;   /* subtle border */
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* Headings */
+h1, h2, h3 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* ---------- BUTTONS ---------- */
+button, .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover, .btn:hover {
+  background: #0097a7;
+  transition: 0.3s;
+}
+
+/* ---------- PROJECTS GRID ---------- */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background: #f5f5f5;
+  transform: translateY(-5px);
+}
+
+/* ---------- FORM ---------- */
+form input, form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 1rem;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  section {
+    margin: 1rem;
+    padding: 2rem;
+  }
+}
+
+/* ================= DROPDOWN GROUP ================= */
+
+.dropdown-group {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.dropdown-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.dropdown-header {
+  width: 100%;
+  background: black;
+  color: #fff;
+  border: none;
+  padding: 15px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-header:hover {
+  background: #222;
+}
+
+.dropdown-body {
+  display: none;
+  padding: 15px 18px;
+  background: #fff;
+}
+
+.arrow {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Active state */
+.dropdown-item.active .dropdown-body {
+  display: block;
+}
+
+.dropdown-item.active .arrow {
+  transform: rotate(45deg);
+}
+
