@@ -180,6 +180,16 @@ button:hover, .btn:hover {
   margin-top: 2rem;
 }
 
+.card img {
+  width: 100%;
+  height: 180px;           /* 👈 force same visual height */
+  object-fit: cover;       /* fills the box nicely */
+  border-radius: 8px;
+  margin-top: 1rem;
+  background: #eee;
+}
+
+
 .card {
   border: 1px solid #ccc;
   padding: 1.5rem;
@@ -281,4 +291,152 @@ footer {
 .dropdown-item.active .arrow {
   transform: rotate(45deg);
 }
+
+
+.about-text {
+  flex: 1;
+}
+
+/* Mobile */
+
+.about-container img:hover {
+  transition: 0.3s ease;
+}
+/* ABOUT SECTION */
+#about {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 1rem 2rem;
+}
+/* ================= ABOUT IMAGE (FINAL & CLEAN) ================= */
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.about-container img {
+  width: 240px;
+  height: 240px;          /* fixed frame */
+  object-fit: contain;    /* PNG safe */
+  background: #f5f5f5;
+  padding: 12px;
+  border-radius: 20px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.2);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-container img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+
+#about h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#about p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+  #about {
+    padding: 1rem;
+  }
+
+  /* ================= CONTACT IMAGE ================= */
+
+.contact-socials img {
+  width: 220px;        /* desktop size */
+  height: 220px;       /* force same frame */
+  object-fit: cover;   /* fills nicely */
+  border-radius: 16px;
+  display: block;
+  margin: 0 auto 1rem;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.contact-socials img:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-socials img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+/* ================= CONTACT LAYOUT ================= */
+
+.contact-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Left image */
+.contact-layout img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  flex-shrink: 0;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Right content */
+.contact-links {
+  text-align: left;
+}
+
+.contact-links a {
+  display: inline-block;
+  margin-right: 0.8rem;
+  font-weight: bold;
+  color: #111;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  color: #00bcd4;
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 768px) {
+  .contact-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-links {
+    text-align: center;
+  }
+
+  .contact-layout img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
 
