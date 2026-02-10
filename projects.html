@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Paul Austin</title>
-  <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="Front-end development projects by Paul Austin.">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-  <nav>
-    <h2>Paul Austin</h2>
-    <ul>
+<header class="header">
+  <nav class="nav">
+    <h2 class="logo">Paul Austin</h2>
+    <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    <button id="theme-toggle">🌙</button>
   </nav>
 </header>
 
-<section id="projects">
-  <h1>Projects</h1>
-
-  <div class="projects">
+  <section id="Projects">
+    <h1>Projects</h1>
     <div class="card project-one">
       <div class="overlay">
-      <h3>8 Stages of Life</h3>
-      <p>Educational website on human development with interactive cards.</p>
-    </div>
-    </div>
-
-    <div class="card project-two">
-      <div class="overlay">
-      <h3>Research Web Pages</h3>
-      <p>Structured web pages to present research findings clearly.</p>
-    </div>
+      <h3>8 Stages of Life Website</h3>
+      <p>
+        Educational website presenting the stages of human development
+        through structured layouts and interactive components.
+      </p>
+      <p><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+      
+   </div>
   </div>
-  </div>
-</section>
 
-<footer>
+   <div class="card project-two">
+    <div class="overlay">
+      <h3>Research-Based Web Pages</h3>
+      <p>
+        Clean, readable web pages designed to present structured research
+        content effectively.
+      </p>
+      <p><strong>Tools:</strong> HTML, CSS</p>
+      
+    </div>
+</div>
+  </section>
+</main>
+
+<footer class="footer">
   <p>© 2026 Paul Austin</p>
 </footer>
 

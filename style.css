@@ -409,7 +409,7 @@ footer {
   .contact-links {
     text-align: center;
   }
-
+ 
   .contact-layout img {
     width: 160px;
     height: 160px;
@@ -426,7 +426,10 @@ footer {
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  margin: 0.5rem;
+  border: 2px solid #e5e5e5;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+  transition: trsnsform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Individual project images */
@@ -451,8 +454,9 @@ footer {
 }
 
 /* Hover effect */
-.card:hover .overlay {
-  background: rgba(0, 0, 0, 0.35);
+.card:hover {
+  transform: translate(-6px);
+  box-shadow: rgba(0, 0, 0, 0.18);
 }
 
 .card h3 {
@@ -463,4 +467,17 @@ footer {
   font-size: 0.95rem;
 }
 
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 8px;                /* inner margin */
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.15);
+  pointer-events: none;
+}
+@media (max-width: 768px) {
+  .card {
+    margin: 1rem 0;
+  }
+}
 

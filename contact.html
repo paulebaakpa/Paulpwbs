@@ -1,56 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Paul Austin</title>
-  <link rel="stylesheet" href="style.css">
-</head>
 
+  <meta name="description" content="Contact Paul Austin for collaboration or project discussions.">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header">
+  <nav class="nav">
+    <h2 class="logo">Paul Austin</h2>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button id="theme-toggle">🌙</button>
+  </nav>
+</header>
 
 <section id="contact">
-  <h1>Contact Me</h1>
-  <p>If you'd like to collaborate, discuss ideas, or just say hello, drop me a message!</p>
 
-  <!-- Direct Contact Info -->
-  <div class="contact-info">
-    <p><strong>Email:</strong> <a href="mailto:paulaustin486@gmail.com">paulaustin486@gmail.com</a></p>
-    <p><strong>Phone:</strong> <a href="tel:+2348139314423">+234 8139314423</a></p>
-    <p><strong>Location:</strong> Nigeria</p>
-  </div>
+    <h1>Contact Me</h1>
+  <div class="contact-layout">
 
-  <!-- Social Links -->
-  <div class="contact-socials">
-    <div class="contact-layout">
-    <img src="https://img.freepik.com/free-photo/neon-robot-vacuum-cleaner_23-2151349230.jpg?semt=ais_hybrid&w=740&q=80" alt="strong-base photo">
+    <img src="images/62ef70bd584e8396c02f984c26e8a2dd-2.jpg" alt="mac screen">
 
-    <div class="contact-link">
-    <p><strong>Connect with me:</strong></p>
-    <a href="https://github.com/paulebaakpa" target="_blank">GitHub</a> |
-    <a href="https://www.linkedin.com/in/austin-paul-603229392" target="_blank">LinkedIn</a> |
-    <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
-  </div>
-  </div>
-  </div>
-  <hr>
+    <p>
+      Have a project, idea, or collaboration in mind?
+      I’d love to hear from you.
+    </p>
 
-  <!-- Contact Form -->
-  <form>
-    <label>
-      Name:<br>
-      <input type="text" name="name" required>
-    </label><br><br>
+   <div class="contact-info">
 
-    <label>
-      Email:<br>
-      <input type="email" name="email" required>
-    </label><br><br>
+  <p>
+    📧 <strong>Email:</strong>
+    <a href="mailto:paulaustin486@gmail.com">paulaustin486@gmail.com</a>
+  </p>
 
-    <label>
-      Message:<br>
-      <textarea name="message" rows="5" required></textarea>
-    </label><br><br>
+  <p>
+    📞 <strong>Phone:</strong>
+    <a href="tel:+2348139314423">+234 813 931 4423</a>
+  </p>
 
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+  <p>
+    💻 <strong>GitHub:</strong>
+    <a href="https://github.com/paulebaakpa" target="_blank">
+      github.com/pauleba
+    </a>
+  </p>
+
+  <p>
+    💼 <strong>LinkedIn:</strong>
+    <a href="https://www.linkedin.com/in/austin-paul-603229392/" target="_blank">
+      linkedin.com/in/Austin Paul
+    </a>
+  </p>
+
+  <p>
+    🐦 <strong>Twitter / X:</strong>
+    <a href="https://twitter.com/yourusername" target="_blank">
+      @yourusername
+    </a>
+  </p>
+
+</div>
+
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5"></textarea>
+
+      <button class="btn primary" type="submit">Send Message</button>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 Paul Austin</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
