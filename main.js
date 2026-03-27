@@ -3,6 +3,8 @@ const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
 const sections = document.querySelectorAll("section");
 const navItems = document.querySelectorAll("nav a");
+const backToTop = document.getElementById("backToTop");
+const darkModeToggle = document.getElementById("darkModeToggle");
 
 
 // ---------- SMOOTH SCROLL ----------
@@ -78,15 +80,13 @@ hamburger?.addEventListener('click', () => {
 
 
 // ---------- DARK MODE (WITH SAVE) ----------
-const toggle = document.getElementById("darkModeToggle");
-
-if (toggle) {
+if (darkModeToggle) {
   // Load saved mode
   if (localStorage.getItem("darkMode") === "enabled") {
     document.body.classList.add("dark");
   }
 
-  toggle.addEventListener("click", () => {
+  darkModeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
 
     if (document.body.classList.contains("dark")) {
@@ -114,8 +114,6 @@ window.addEventListener("scroll", () => {
 
 
 // ---------- BACK TO TOP BUTTON ----------
-const backToTop = document.getElementById("backToTop");
-
 window.addEventListener("scroll", () => {
   if (backToTop) {
     backToTop.style.display = window.scrollY > 300 ? "block" : "none";
