@@ -2,59 +2,122 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Paul Austin</title>
-
-  <meta name="description" content="Learn more about Paul Austin, a front-end developer focused on clean and research-driven web experiences.">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paul Austin | Front-End Developer</title>
+  <meta name="description" content="Front-end developer building clean, responsive, and research-driven web experiences.">
+  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
 <header class="header">
   <nav class="nav">
     <h2 class="logo">Paul Austin</h2>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-    <button id="theme-toggle">🌙</button>
+    <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
   </nav>
 </header>
 
-<!-- ABOUT SECTION -->
-<section id="about">
-  <div class="about-container">
-    <img src="images/images-2.png" alt="profilepic">
-  </div>
-  
-    <h1>About Me</h1>
+<div class="container">
 
-    <p>
-      Hi, I’m <strong>Paul Austin</strong>, a front-end developer who enjoys
-      turning structured ideas into clean, usable web interfaces.
-    </p>
+  <!-- ================= SIDEBAR ================= -->
+  <aside class="sidebar">
+    <img src="images/profile.jpeg" alt="Paul Austin" class="profile-pic" />
+    <h1>Paul Austin</h1>
+    <p>Front-End Developer crafting clean, responsive, research-driven experiences.</p>
 
-    <p>
-      My approach to development is influenced by research, clarity, and
-      problem-solving. I focus on writing simple, maintainable code while
-      ensuring great user experience.
-    </p>
+    <h3>Core Skills</h3>
+    <ul class="sidebar-skills">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Responsive Design</li>
+      <li>Git & GitHub</li>
+      <li>Research-Based Layouts</li>
+    </ul>
 
-    <p>
-      I’m currently improving my skills in responsive design, accessibility,
-      and modern JavaScript workflows.
-    </p>
-  </section>
+    <a href="PaulAustin_CV.pdf" class="btn primary" download>Download CV</a>
+  </aside>
 
-<!-- FOOTER -->
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="main-content">
+
+    <!-- HERO -->
+    <section id="home" class="hero reveal">
+      <div class="hero-text">
+        <h1>Hi, I’m Paul Austin</h1>
+        <p>I build clean, responsive, and research-driven web experiences.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/code.jpeg" alt="code">
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about reveal">
+      <h2>About Me</h2>
+      <p>Hi, I’m <strong>Paul Austin</strong>, a front-end developer who enjoys turning structured ideas into clean, usable web interfaces. I focus on writing simple, maintainable code while ensuring great user experience.</p>
+      <p>I’m currently improving my skills in responsive design, accessibility, and modern JavaScript workflows.</p>
+    </section>
+
+   <!-- PROJECTS -->
+    <section id="projects" class="projects reveal">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="card project-one">
+          <div class="overlay">
+            <h3>8 Stages of Life</h3>
+            <p>Educational web experience presenting human development stages.</p>
+            <a href="projects.html" class="btn secondary">View Project →</a>
+          </div>
+        </div>
+        <div class="card project-two">
+          <div class="overlay">
+            <h3>Library Management</h3>
+            <p>Web-based system for managing book inventories and users.</p>
+            <a href="projects.html" class="btn secondary">View Project →</a>
+          </div>
+        </div>
+        <!-- Add more project cards here -->
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact reveal">
+      <h2>Contact Me</h2>
+      <p>Have a project, idea, or collaboration in mind? I’d love to hear from you.</p>
+      <div class="contact-info">
+        <p>📧 <strong>Email:</strong> <a href="mailto:paulaustin486@gmail.com">paulaustin486@gmail.com</a></p>
+        <p>📞 <strong>Phone:</strong> <a href="tel:+2348139314423">+234 813 931 4423</a></p>
+        <p>💻 <strong>GitHub:</strong> <a href="https://github.com/paulebaakpa" target="_blank">github.com/pauleba</a></p>
+        <p>💼 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/austin-paul-603229392/" target="_blank">linkedin.com/in/Austin Paul</a></p>
+      </div>
+      <form id="contactForm" class="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" rows="5"></textarea>
+        <button class="btn primary" type="submit">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+</div>
+
 <footer class="footer">
-  <p>© 2026 Paul Austin</p>
+  <p>© 2026 Paul Austin • Built with HTML, CSS & JavaScript</p>
 </footer>
 
+<button id="backToTop">↑</button>
 <script src="main.js"></script>
 </body>
 </html>

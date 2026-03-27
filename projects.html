@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects | Paul Austin</title>
 
   <meta name="description" content="Front-end development projects by Paul Austin.">
@@ -14,31 +14,39 @@
 <header class="header">
   <nav class="nav">
     <h2 class="logo">Paul Austin</h2>
-    <ul class="nav-links">
+
+    <!-- ✅ FIXED -->
+    <ul id="nav-links" class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="#projects" class="active">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <button id="theme-toggle">🌙</button>
+
+    <!-- ✅ FIXED -->
+    <button id="darkModeToggle">🌙</button>
   </nav>
 </header>
 
-  <section id="Projects">
-    <h1>Projects</h1>
-    <div class="card project-one">
-      <div class="overlay">
+<main>
+
+<section id="projects" class="reveal">
+  <h1>Projects</h1>
+
+  <!-- PROJECT 1 -->
+  <div class="card project-one" data-page="project1.html">
+    <div class="overlay">
       <h3>8 Stages of Life Website</h3>
       <p>
         Educational website presenting the stages of human development
         through structured layouts and interactive components.
       </p>
       <p><strong>Tools:</strong> HTML, CSS, JavaScript</p>
-      
-   </div>
+    </div>
   </div>
 
-   <div class="card project-two">
+  <!-- PROJECT 2 -->
+  <div class="card project-two" data-page="project2.html">
     <div class="overlay">
       <h3>Research-Based Web Pages</h3>
       <p>
@@ -46,15 +54,19 @@
         content effectively.
       </p>
       <p><strong>Tools:</strong> HTML, CSS</p>
-      
     </div>
-</div>
-  </section>
+  </div>
+
+</section>
+
 </main>
 
 <footer class="footer">
   <p>© 2026 Paul Austin</p>
 </footer>
+
+<!-- ✅ BACK TO TOP -->
+<button id="backToTop">↑</button>
 
 <script src="main.js"></script>
 </body>

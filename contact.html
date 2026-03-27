@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact | Paul Austin</title>
 
   <meta name="description" content="Contact Paul Austin for collaboration or project discussions.">
@@ -14,19 +14,25 @@
 <header class="header">
   <nav class="nav">
     <h2 class="logo">Paul Austin</h2>
-    <ul class="nav-links">
+
+    <!-- ✅ FIXED ID -->
+    <ul id="nav-links" class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
-    <button id="theme-toggle">🌙</button>
+
+    <!-- ✅ FIXED ID -->
+    <button id="darkModeToggle">🌙</button>
   </nav>
 </header>
 
-<section id="contact">
+<main>
+<section id="contact" class="reveal">
 
-    <h1>Contact Me</h1>
+  <h1>Contact Me</h1>
+
   <div class="contact-layout">
 
     <img src="images/62ef70bd584e8396c02f984c26e8a2dd-2.jpg" alt="mac screen">
@@ -36,55 +42,60 @@
       I’d love to hear from you.
     </p>
 
-   <div class="contact-info">
+    <div class="contact-info">
 
-  <p>
-    📧 <strong>Email:</strong>
-    <a href="mailto:paulaustin486@gmail.com">paulaustin486@gmail.com</a>
-  </p>
+      <p>
+        📧 <strong>Email:</strong>
+        <a href="mailto:paulaustin486@gmail.com">paulaustin486@gmail.com</a>
+      </p>
 
-  <p>
-    📞 <strong>Phone:</strong>
-    <a href="tel:+2348139314423">+234 813 931 4423</a>
-  </p>
+      <p>
+        📞 <strong>Phone:</strong>
+        <a href="tel:+2348139314423">+234 813 931 4423</a>
+      </p>
 
-  <p>
-    💻 <strong>GitHub:</strong>
-    <a href="https://github.com/paulebaakpa" target="_blank">
-      github.com/pauleba
-    </a>
-  </p>
+      <p>
+        💻 <strong>GitHub:</strong>
+        <a href="https://github.com/paulebaakpa" target="_blank">
+          github.com/pauleba
+        </a>
+      </p>
 
-  <p>
-    💼 <strong>LinkedIn:</strong>
-    <a href="https://www.linkedin.com/in/austin-paul-603229392/" target="_blank">
-      linkedin.com/in/Austin Paul
-    </a>
-  </p>
+      <p>
+        💼 <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/austin-paul-603229392/" target="_blank">
+          linkedin.com/in/Austin Paul
+        </a>
+      </p>
 
-  <p>
-    🐦 <strong>Twitter / X:</strong>
-    <a href="https://twitter.com/yourusername" target="_blank">
-      @yourusername
-    </a>
-  </p>
+      <p>
+        🐦 <strong>Twitter / X:</strong>
+        <a href="https://twitter.com/yourusername" target="_blank">
+          @yourusername
+        </a>
+      </p>
 
-</div>
+    </div>
 
-
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="5"></textarea>
+    <!-- ✅ FIXED FORM -->
+    <form id="contactForm" class="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" rows="5"></textarea>
 
       <button class="btn primary" type="submit">Send Message</button>
     </form>
-  </section>
+
+  </div>
+</section>
 </main>
 
 <footer class="footer">
   <p>© 2026 Paul Austin</p>
 </footer>
+
+<!-- ✅ ADD BACK TO TOP -->
+<button id="backToTop">↑</button>
 
 <script src="main.js"></script>
 </body>

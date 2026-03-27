@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Paul Austin | Front-End Developer</title>
 
   <meta name="description" content="Front-end developer building clean, responsive, and research-driven web experiences.">
@@ -16,19 +16,23 @@
   <nav class="nav">
     <h2 class="logo">Paul Austin</h2>
 
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
+    <!-- ✅ FIXED -->
+    <ul id="nav-links" class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
 
-    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    <!-- ✅ FIXED -->
+    <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
   </nav>
 </header>
 
+<main>
+
 <!-- ================= HERO ================= -->
-<section class="hero">
+<section id="home" class="hero reveal">
   <div class="hero-content">
 
     <div class="hero-text">
@@ -44,14 +48,14 @@
     </div>
 
     <div class="hero-image">
-      <img src="images/images-2.png" alt="Paul Austin">
+      <img src="images/pp.jpeg" alt="Paul Austin">
     </div>
 
   </div>
 </section>
 
 <!-- ================= SKILLS ================= -->
-<section class="skills">
+<section id="skills" class="skills reveal">
   <h2>Core Skills</h2>
 
   <div class="skills-grid">
@@ -65,7 +69,7 @@
 </section>
 
 <!-- ================= FEATURED PROJECTS ================= -->
-<section class="featured-projects">
+<section id="projects" class="featured-projects reveal">
   <h2>Featured Projects</h2>
 
   <div class="project-preview">
@@ -75,10 +79,15 @@
   </div>
 </section>
 
+</main>
+
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
   <p>© 2026 Paul Austin • Built with HTML, CSS & JavaScript</p>
 </footer>
+
+<!-- ✅ BACK TO TOP -->
+<button id="backToTop">↑</button>
 
 <script src="main.js"></script>
 </body>
