@@ -17,13 +17,13 @@
 
     <h2 class="logo">Paul Austin</h2>
 
-    <!-- ✅ Hamburger -->
-    <button id="menu-toggle" class="menu-toggle">☰</button>
+    <!-- ✅ FIXED: ID must match JS -->
+    <button id="hamburger" class="menu-toggle">☰</button>
 
-    <!-- ✅ Nav Links -->
+    <!-- ✅ KEEP BOTH id + class -->
     <ul id="nav-links" class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="about.html" class="active">About</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -94,6 +94,8 @@
 <!-- ✅ BACK TO TOP -->
 <button id="backToTop">↑</button>
 
+<!-- ✅ IMPORTANT: JS must be at the bottom -->
 <script src="main.js"></script>
+
 </body>
 </html>
