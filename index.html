@@ -14,13 +14,10 @@
 <!-- ================= HEADER ================= -->
 <header class="header">
   <nav class="nav">
-
     <h2 class="logo">Paul Austin</h2>
 
-    <!-- ✅ FIXED: ID must match JS -->
     <button id="hamburger" class="menu-toggle">☰</button>
 
-    <!-- ✅ KEEP BOTH id + class -->
     <ul id="nav-links" class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html" class="active">About</a></li>
@@ -28,9 +25,7 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
 
-    <!-- ✅ Dark mode -->
     <button id="darkModeToggle">🌙</button>
-
   </nav>
 </header>
    
@@ -59,6 +54,48 @@
   </div>
 </section>
 
+<!-- ================= ABOUT PREVIEW ================= -->
+<section class="reveal">
+  <div style="display:flex; gap:2rem; align-items:center; flex-wrap:wrap;">
+
+    <img src="images/profile.jpeg" alt="Profile" style="width:250px; border-radius:12px;">
+
+    <div>
+      <h2>About Me</h2>
+      <p>
+        I’m a passionate front-end developer focused on building clean,
+        user-friendly, and responsive interfaces. I enjoy transforming ideas
+        into real-world digital experiences.
+      </p>
+
+      <a href="about.html" class="btn">Read More</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="reveal" style="text-align:center;">
+  <h2>My Impact</h2>
+
+  <div style="display:flex; justify-content:center; gap:3rem; flex-wrap:wrap; margin-top:1.5rem;">
+    <div>
+      <h3>10+</h3>
+      <p>Projects Built</p>
+    </div>
+
+    <div>
+      <h3>5+</h3>
+      <p>Technologies</p>
+    </div>
+
+    <div>
+      <h3>100%</h3>
+      <p>Responsive Designs</p>
+    </div>
+  </div>
+</section>
+
 <!-- ================= SKILLS ================= -->
 <section id="skills" class="skills reveal">
   <h2>Core Skills</h2>
@@ -77,10 +114,51 @@
 <section id="projects" class="featured-projects reveal">
   <h2>Featured Projects</h2>
 
-  <div class="project-preview">
-    <h3>8 Stages of Life Website</h3>
-    <p>Educational web experience presenting human development stages.</p>
-    <a href="projects.html">View all projects →</a>
+  <div class="project-item">
+
+    <div class="project-image">
+      <img src="images/code.jpeg" alt="Project">
+    </div>
+
+    <div class="project-text">
+      <h3>Portfolio Website</h3>
+      <p>
+        A modern and responsive personal portfolio built with HTML, CSS,
+        and JavaScript. Focused on clean UI, accessibility, and performance.
+      </p>
+
+      <a href="projects.html" class="btn">View Project</a>
+    </div>
+
+  </div>
+
+
+  <div class="project-item">
+
+    <div class="project-image">
+      <img src="images/element.jpeg" alt="Project">
+    </div>
+
+    <div class="project-text">
+      <h3>8 Stages of Life</h3>
+      <p>
+        An educational web experience explaining human development stages
+        using structured layouts and interactive content.
+      </p>
+
+      <a href="projects.html" class="btn">View Project</a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta reveal">
+  <div class="cta-content">
+    <h2>Let’s Work Together</h2>
+    <p>I’m available for freelance and collaboration.</p>
+    <a href="contact.html" class="btn">Get In Touch</a>
   </div>
 </section>
 
@@ -91,11 +169,8 @@
   <p>© 2026 Paul Austin • Built with HTML, CSS & JavaScript</p>
 </footer>
 
-<!-- ✅ BACK TO TOP -->
 <button id="backToTop">↑</button>
 
-<!-- ✅ IMPORTANT: JS must be at the bottom -->
 <script src="main.js"></script>
-
 </body>
 </html>

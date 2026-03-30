@@ -222,3 +222,94 @@ body.dark section {
 body.dark .footer {
   background: #000;
 }
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* PROJECT LAYOUT FIX */
+.project-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* IMAGE SIDE */
+.project-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* TEXT SIDE */
+.project-text h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-text p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .project-item {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image img {
+    height: 200px;
+  }
+}
+
+.project-item:nth-child(even) .project-image {
+  order: 2;
+}
+
+/* CTA SECTION WITH BACKGROUND IMAGE */
+.cta {
+  position: relative;
+  background: url("images/laptop.jpeg") center/cover no-repeat;
+  padding: 5rem 2rem;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* DARK OVERLAY */
+.cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* 🔥 controls text visibility */
+  z-index: 1;
+}
+
+/* CONTENT ABOVE OVERLAY */
+.cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* TEXT SPACING */
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  margin-bottom: 1.5rem;
+}
