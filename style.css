@@ -24,6 +24,9 @@ body {
   background: #0f172a;
   z-index: 1000;
   padding: 1rem 2rem;
+  display: flex;              
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* ================= NAV ================= */
@@ -312,4 +315,20 @@ body.dark .footer {
 
 .cta p {
   margin-bottom: 1.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo h2 {
+  font-size: 20px;
+  margin: 0;
 }
