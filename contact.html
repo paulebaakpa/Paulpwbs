@@ -4,9 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact | Paul Austin</title>
-
-  <meta name="description" content="Contact Paul Austin for collaboration or project discussions.">
-
+  <meta name="description" content="Contact Paul Austin for collaboration, project discussions, or inquiries.">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,87 +13,86 @@
   <nav class="nav">
     <h2 class="logo">Paul Austin</h2>
 
-    <!-- ✅ FIXED ID -->
     <ul id="nav-links" class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
     </ul>
 
-    <!-- ✅ FIXED ID -->
-    <button id="darkModeToggle">🌙</button>
+    <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
   </nav>
 </header>
 
 <main>
-<section id="contact" class="reveal">
+  <section id="contact" class="reveal">
+    <h1>Contact Me</h1>
 
-  <h1>Contact Me</h1>
+    <div class="contact-layout">
+      <div class="contact-media">
+        <img src="images/62ef70bd584e8396c02f984c26e8a2dd-2.jpg" alt="A modern workstation displaying code on a Mac screen">
+      </div>
 
-  <div class="contact-layout">
+      <div class="contact-intro">
+        <p>Have a project, idea, or collaboration in mind? I’d love to hear from you. Reach out through the form or via my social channels.</p>
+      </div>
 
-    <img src="images/62ef70bd584e8396c02f984c26e8a2dd-2.jpg" alt="mac screen">
+      <!-- Semantic address wrapper for contact details -->
+      <address class="contact-info">
+        <p>
+          📧 <strong>Email:</strong>
+          <a href="mailto:paulaustin486@gmail.com">paulaustin486@gmail.com</a>
+        </p>
 
-    <p>
-      Have a project, idea, or collaboration in mind?
-      I’d love to hear from you.
-    </p>
+        <p>
+          📞 <strong>Phone:</strong>
+          <a href="tel:+2348139314423">+234 813 931 4423</a>
+        </p>
 
-    <div class="contact-info">
+        <p>
+          💻 <strong>GitHub:</strong>
+          <a href="https://github.com/paulebaakpa" target="_blank" rel="noopener noreferrer">github.com/paulebaakpa</a>
+        </p>
 
-      <p>
-        📧 <strong>Email:</strong>
-        <a href="mailto:paulaustin486@gmail.com">paulaustin486@gmail.com</a>
-      </p>
+        <p>
+          💼 <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/austin-paul-603229392/" target="_blank" rel="noopener noreferrer">linkedin.com/in/austin-paul-603229392</a>
+        </p>
 
-      <p>
-        📞 <strong>Phone:</strong>
-        <a href="tel:+2348139314423">+234 813 931 4423</a>
-      </p>
+        <p>
+          🐦 <strong>Twitter / X:</strong>
+          <a href="https://x.com/paulebaakpa" target="_blank" rel="noopener noreferrer">@paulebaakpa</a>
+        </p>
+      </address>
 
-      <p>
-        💻 <strong>GitHub:</strong>
-        <a href="https://github.com/paulebaakpa" target="_blank">
-          github.com/pauleba
-        </a>
-      </p>
+      <!-- Accessible and structured contact form -->
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="" required />
+        </div>
 
-      <p>
-        💼 <strong>LinkedIn:</strong>
-        <a href="https://www.linkedin.com/in/austin-paul-603229392/" target="_blank">
-          linkedin.com/in/Austin Paul
-        </a>
-      </p>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="" required />
+        </div>
 
-      <p>
-        🐦 <strong>Twitter / X:</strong>
-        <a href="https://twitter.com/yourusername" target="_blank">
-          @yourusername
-        </a>
-      </p>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+        </div>
 
+        <button class="btn primary" type="submit">Send Message</button>
+      </form>
     </div>
-
-    <!-- ✅ FIXED FORM -->
-    <form id="contactForm" class="contact-form">
-      <input type="text" id="name" placeholder="Your Name" required />
-      <input type="email" id="email" placeholder="Your Email" required />
-      <textarea id="message" placeholder="Your Message" rows="5"></textarea>
-
-      <button class="btn primary" type="submit">Send Message</button>
-    </form>
-
-  </div>
-</section>
+  </section>
 </main>
 
 <footer class="footer">
-  <p>© 2026 Paul Austin</p>
+  <p>&copy; 2026 Paul Austin. All rights reserved.</p>
 </footer>
 
-<!-- ✅ ADD BACK TO TOP -->
-<button id="backToTop">↑</button>
+<button id="backToTop" aria-label="Back to top">↑</button>
 
 <script src="main.js"></script>
 </body>
