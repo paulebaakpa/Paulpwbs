@@ -58,6 +58,7 @@ document.querySelectorAll('.card').forEach(card => {
 });
 
 
+
 // ---------- DROPDOWN ACCORDION ----------
 document.querySelectorAll('.dropdown-header').forEach(header => {
   header.addEventListener('click', () => {
@@ -81,20 +82,29 @@ hamburger?.addEventListener('click', () => {
 
 // ---------- DARK MODE (WITH SAVE) ----------
 if (darkModeToggle) {
-  // Load saved mode
-  if (localStorage.getItem("darkMode") === "enabled") {
+
+  if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark");
   }
 
   darkModeToggle.addEventListener("click", () => {
+
     document.body.classList.toggle("dark");
 
-    if (document.body.classList.contains("dark")) {
-      localStorage.setItem("darkMode", "enabled");
-    } else {
-      localStorage.setItem("darkMode", "disabled");
-    }
+    localStorage.setItem(
+      "theme",
+      document.body.classList.contains("dark")
+      ? "dark"
+      : "light"
+    );
+
   });
+
+}
+
+if(localStorage.getItem("theme")==="dark"){
+
+ document.body.classList.add("dark");
 }
 
 
@@ -122,4 +132,80 @@ window.addEventListener("scroll", () => {
 
 backToTop?.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach(counter => {
+
+  const updateCounter = () => {
+
+    const target = +counter.dataset.target;
+
+    const count = +counter.innerText;
+
+    const increment = target / 100;
+
+    if(count < target){
+
+      counter.innerText =
+      Math.ceil(count + increment);
+
+      setTimeout(updateCounter,20);
+
+    } else {
+
+      counter.innerText = target + "+";
+    }
+  }
+
+  updateCounter();
+});
+
+const glow = document.querySelector(".cursor-glow");
+
+document.addEventListener("mousemove", (e) => {
+
+  glow.style.left = `${e.clientX}px`;
+  glow.style.top = `${e.clientY}px`;
+
+});
+
+
+const words = [
+  "Front-End Developer",
+  "JavaScript Developer",
+  "UI Designer",
+  "Problem Solver"
+];
+
+let wordIndex = 0;
+const typing = document.getElementById("typing");
+
+setInterval(() => {
+  typing.textContent = words[wordIndex];
+  wordIndex = (wordIndex + 1) % words.length;
+}, 2000);
+
+const interactiveElements =
+document.querySelectorAll(
+  ".btn, .skill-card, .project-card, a"
+);
+
+interactiveElements.forEach(item => {
+
+  item.addEventListener("mouseenter", () => {
+
+    glow.style.width = "500px";
+    glow.style.height = "500px";
+
+  });
+
+  item.addEventListener("mouseleave", () => {
+
+    glow.style.width = "350px";
+    glow.style.height = "350px";
+
+  });
+
 });
