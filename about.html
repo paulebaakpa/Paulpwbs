@@ -3,9 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Learn about Paul Eba, a front-end web developer based in Lagos, Nigeria specializing in HTML, CSS, JavaScript, and React.">
-  <title>About | Paul Eba</title>
-  <link rel="icon" type="image/png" href="images/frontend.jpeg">
+  <meta name="description" content="Learn more about Paul Eba, a front-end web developer based in Lagos, Nigeria building responsive interfaces with HTML, CSS, JavaScript, and React.">
+  <title>About | Paul Eba — Front-End Web Developer</title>
+
+  <!-- Crisp SVG Monogram Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23142129'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Georgia,serif' font-size='26' font-weight='700' fill='%23d4a359'%3EPE%3C/text%3E%3C/svg%3E">
+
+  <!-- Open Graph & Social Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About | Paul Eba — Front-End Web Developer">
+  <meta property="og:description" content="Learn more about Paul Eba's front-end development approach, tools, and experience in Lagos, Nigeria.">
+  <meta property="og:image" content="https://paulebaakpa.github.io/mywebsite/images/profile.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About | Paul Eba — Front-End Web Developer">
+  <meta name="twitter:description" content="Learn more about Paul Eba's front-end development approach, tools, and experience in Lagos, Nigeria.">
+
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
@@ -31,28 +43,31 @@
   </header>
 
   <main>
-    <section class="page-hero">
-      <div class="container reveal">
-        <p class="breadcrumb"><a href="index.html">Home</a> / About</p>
-        <p class="section-label">About Me</p>
-        <h1 class="section-title">Developer, designer at heart, problem solver.</h1>
-        <p>I'm Paul Eba — a front-end web developer based in Lagos, Nigeria, focused on building responsive websites and interactive web components.</p>
-      </div>
-    </section>
-
     <section class="section">
       <div class="container about-grid">
         <div class="about-image reveal">
-          <img src="images/profile.jpeg" alt="Portrait of Paul Eba">
+          <img src="images/profile.jpeg" alt="Paul Eba front-end developer portrait">
         </div>
         <div class="about-content reveal">
-          <p class="section-label">My Story</p>
-          <h2 class="section-title">Building the web, one component at a time.</h2>
-          <p>I'm a front-end web developer with a passion for creating clean, user-friendly digital experiences. Based in Lagos, Nigeria, I specialize in turning ideas and designs into responsive, interactive websites that people enjoy using.</p>
-          <p>My toolkit includes HTML, CSS, JavaScript, and React — technologies I use to craft everything from simple landing pages to dynamic web components. I care deeply about code quality, performance, and creating interfaces that work beautifully on every screen size.</p>
-          <p>I'm always learning, exploring new front-end techniques, and looking for opportunities to build meaningful products.</p>
+          <p class="section-label">About Paul Eba</p>
+          <h1 class="section-title">Front-end developer based in Lagos, Nigeria.</h1>
+          <div class="svg-divider" aria-hidden="true">
+            <svg viewBox="0 0 240 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0" y1="8" x2="96" y2="8" stroke="currentColor" stroke-opacity="0.28" stroke-width="1.5"/>
+              <path d="M112 8L120 2L128 8L120 14L112 8Z" stroke="var(--color-highlight, #d4a359)" stroke-width="1.75"/>
+              <circle cx="140" cy="8" r="2.5" fill="var(--color-accent, #c86d3b)"/>
+              <line x1="154" y1="8" x2="240" y2="8" stroke="currentColor" stroke-opacity="0.28" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <p>I focus on building responsive websites, multi-page editorial experiences, and interactive user interfaces using HTML, CSS, JavaScript, and React.</p>
+          <p>My workflow emphasizes clean design tokens, predictable layout spacing, accessible navigation, and smooth deployment on static hosts like GitHub Pages.</p>
+          <ul class="check-list">
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span>Responsive layouts across mobile, tablet, and desktop screens.</span></li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span>Interactive filtering, search, and UI state with JavaScript and React.</span></li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span>Maintainable custom properties and clean Git version control.</span></li>
+          </ul>
           <div class="hero-actions">
-            <a href="projects.html" class="btn btn-primary">View My Work</a>
+            <a href="projects.html" class="btn btn-primary">Explore Projects</a>
             <a href="contact.html" class="btn btn-secondary">Contact Me</a>
           </div>
         </div>
@@ -61,65 +76,31 @@
 
     <section class="section section-alt">
       <div class="container">
-        <div class="center reveal">
-          <p class="section-label">What I Do</p>
-          <h2 class="section-title">Services &amp; focus areas</h2>
-          <p class="section-intro">I bring a practical, detail-oriented approach to every project I work on.</p>
+        <div class="center section-heading--center reveal">
+          <p class="section-label">How I Work</p>
+          <h2 class="section-title">Principles behind every build</h2>
+          <div class="svg-divider" aria-hidden="true">
+            <svg viewBox="0 0 240 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0" y1="8" x2="96" y2="8" stroke="currentColor" stroke-opacity="0.28" stroke-width="1.5"/>
+              <path d="M112 8L120 2L128 8L120 14L112 8Z" stroke="var(--color-highlight, #d4a359)" stroke-width="1.75"/>
+              <circle cx="140" cy="8" r="2.5" fill="var(--color-accent, #c86d3b)"/>
+              <line x1="154" y1="8" x2="240" y2="8" stroke="currentColor" stroke-opacity="0.28" stroke-width="1.5"/>
+            </svg>
+          </div>
         </div>
         <div class="grid-3 reveal">
           <div class="card">
-            <div class="card-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
-            <h3>Responsive Web Development</h3>
-            <p>Websites that adapt seamlessly to mobile, tablet, and desktop screens with clean layouts and smooth interactions.</p>
+            <h3>Clarity &amp; Structure</h3>
+            <p>Organizing semantic HTML, consistent typography, and reusable CSS variables before adding complex effects.</p>
           </div>
           <div class="card">
-            <div class="card-icon"><i class="fa-solid fa-puzzle-piece" aria-hidden="true"></i></div>
-            <h3>Interactive Components</h3>
-            <p>Engaging UI components built with JavaScript and React that enhance user experience and functionality.</p>
+            <h3>Iterative Refinement</h3>
+            <p>Testing layouts locally, inspecting responsive breakpoints, and improving components step by step.</p>
           </div>
           <div class="card">
-            <div class="card-icon"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></div>
-            <h3>Performance &amp; Best Practices</h3>
-            <p>Clean, maintainable code following modern standards for accessibility, performance, and scalability.</p>
+            <h3>Practical Performance</h3>
+            <p>Keeping pages fast, lightweight, and reliable across everyday connections and devices.</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="center reveal">
-          <p class="section-label">Technical Skills</p>
-          <h2 class="section-title">My development toolkit</h2>
-          <p class="section-intro">The core technologies I use to bring designs to life.</p>
-        </div>
-        <div class="grid-2 reveal">
-          <div class="card skill-card">
-            <div class="card-icon"><i class="fa-brands fa-html5" aria-hidden="true"></i></div>
-            <div><h3>HTML5</h3><p>Semantic structure, accessibility, and SEO-friendly markup.</p></div>
-          </div>
-          <div class="card skill-card">
-            <div class="card-icon"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i></div>
-            <div><h3>CSS3</h3><p>Flexbox, Grid, animations, and responsive design systems.</p></div>
-          </div>
-          <div class="card skill-card">
-            <div class="card-icon"><i class="fa-brands fa-js" aria-hidden="true"></i></div>
-            <div><h3>JavaScript</h3><p>DOM manipulation, ES6+, APIs, and interactive functionality.</p></div>
-          </div>
-          <div class="card skill-card">
-            <div class="card-icon"><i class="fa-brands fa-react" aria-hidden="true"></i></div>
-            <div><h3>React</h3><p>Component-based architecture, hooks, and modern UI patterns.</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div class="container reveal">
-        <h2>Interested in working together?</h2>
-        <p>I'm open to freelance projects, collaborations, and new opportunities.</p>
-        <div class="hero-actions" style="justify-content:center; margin-bottom:0;">
-          <a href="contact.html" class="btn btn-primary">Get In Touch</a>
         </div>
       </div>
     </section>

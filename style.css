@@ -269,3 +269,21 @@ body.dark .form-status.success { color: #5fd6a2; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
+
+.svg-divider {
+  width: min(240px, 60vw);
+  margin: 0.65rem 0 1.25rem;
+  color: var(--color-primary, #142129);
+}
+
+.section-heading--center .svg-divider {
+  margin-inline: auto;
+}
+
+.project-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center;
+}
