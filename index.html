@@ -1,202 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Paul Eba is a front-end web developer based in Lagos, Nigeria, building responsive websites and interactive web components with HTML, CSS, JavaScript, and React.">
+  <title>Paul Eba | Front-End Web Developer</title>
   <link rel="icon" type="image/png" href="images/frontend.jpeg">
-  <title>Paul Austin | Front-End Developer</title>
-  <meta name="description" content="Front-end developer building clean, responsive, and research-driven web experiences.">
-  <link rel="stylesheet"
- href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="header">
+    <div class="nav-wrap">
+      <a href="index.html" class="logo" aria-label="Paul Eba home">
+        <img src="images/pp.jpeg" alt="Paul Eba portrait">
+        <span>Paul Eba</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <button id="hamburger" class="icon-btn menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="darkModeToggle" class="icon-btn" aria-label="Switch to dark mode">🌙</button>
+      </nav>
+    </div>
+  </header>
 
-<!-- ================= HEADER ================= -->
-<header class="header">
-  <div class="logo">
-    <img src="images/pp.jpeg" alt="Paul Austin Logo">
-    <h2>Paul Austin</h2>
-  </div>
-
-  <nav class="nav">
-    <button id="hamburger" class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
-
-    <ul id="nav-links" class="nav-links">
-      <li><a href="index.html" class="active" aria-current="page">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-
-    <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
-  </nav>
-</header>
-
-<main>
-
-  <!-- ================= HERO ================= -->
-  <!-- Note: Removed card background layout logic from CSS for #home to make it stretch cleanly -->
-  <section id="home" class="hero reveal">
-    <div class="hero-content">
-      <div class="hero-text">
-       <h1>
-  Hi, I'm <span class="highlight">Paul Austin</span>
-</h1>
-
-<p class="typing-text">
-  <span id="typing">JavaScript Developer</span>
-</p>
-        <p class="hero-subtitle">
-          I build clean, responsive, and research-driven web experiences.
-        </p>
-        <div class="hero-actions">
-          <a href="projects.html" class="btn primary">View Projects</a>
-          <a href="contact.html" class="btn secondary">Contact Me</a>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Lagos, Nigeria</p>
+          <h1>Front-End Developer building <span>modern web experiences.</span></h1>
+          <p>I'm Paul Eba, a front-end web developer who builds responsive websites and interactive web components with HTML, CSS, JavaScript, and React. I focus on clean design, performance, and usability.</p>
+          <div class="hero-actions">
+            <a href="projects.html" class="btn btn-primary">View Projects</a>
+            <a href="contact.html" class="btn btn-secondary">Let's Talk</a>
+          </div>
+          <ul class="hero-meta" aria-label="Highlights">
+            <li><i class="fa-solid fa-code" aria-hidden="true"></i> HTML, CSS, JavaScript, React</li>
+            <li><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i> Responsive-first approach</li>
+          </ul>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="hero-card">
+            <img src="images/profile.jpeg" alt="Paul Eba working as a front-end developer">
+          </div>
+          <div class="floating-badge badge-top">
+            <strong>Front-End</strong>
+            <span>Web Developer</span>
+          </div>
+          <div class="floating-badge badge-bottom">
+            <strong>React + JS</strong>
+            <span>Interactive UI</span>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="hero-image">
-        <img src="images/frontend.jpeg" alt="Paul Austin digital workspace configuration">
+    <section class="section section-alt">
+      <div class="container">
+        <div class="stats-grid reveal">
+          <div class="stat-card">
+            <div class="num counter" data-target="15">0</div>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat-card">
+            <div class="num counter" data-target="4">0</div>
+            <p>Core Technologies</p>
+          </div>
+          <div class="stat-card">
+            <div class="num counter" data-target="100">0</div>
+            <p>Responsive Focus</p>
+          </div>
+          <div class="stat-card">
+            <div class="num counter" data-target="3">0</div>
+            <p>Years Learning &amp; Building</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-grid">
+        <div class="about-image reveal">
+          <img src="images/code.jpeg" alt="Code on a screen representing front-end development">
+        </div>
+        <div class="about-content reveal">
+          <p class="section-label">About</p>
+          <h2 class="section-title">Clean code, thoughtful interfaces.</h2>
+          <p>I’m a front-end developer based in Lagos, Nigeria, passionate about turning ideas into polished digital products. I enjoy building interfaces that are not only visually appealing but also accessible, responsive, and easy to use.</p>
+          <p>From landing pages to interactive components, I bring designs to life with modern front-end tools and a strong attention to detail.</p>
+          <ul class="check-list">
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span>Responsive websites that work across devices.</span></li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span>Interactive UI components with JavaScript and React.</span></li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span>Clean, maintainable, and user-focused code.</span></li>
+          </ul>
+          <a href="about.html" class="btn btn-primary">More About Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="center reveal">
+          <p class="section-label">Skills</p>
+          <h2 class="section-title">Technologies I work with</h2>
+          <p class="section-intro">I use modern front-end technologies to build fast, responsive, and engaging web experiences.</p>
+        </div>
+        <div class="grid-2 reveal">
+          <div class="card skill-card">
+            <div class="card-icon"><i class="fa-brands fa-html5" aria-hidden="true"></i></div>
+            <div><h3>HTML5</h3><p>Semantic, accessible markup for solid foundations.</p></div>
+          </div>
+          <div class="card skill-card">
+            <div class="card-icon"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i></div>
+            <div><h3>CSS3</h3><p>Modern layouts, animations, and responsive styling.</p></div>
+          </div>
+          <div class="card skill-card">
+            <div class="card-icon"><i class="fa-brands fa-js" aria-hidden="true"></i></div>
+            <div><h3>JavaScript</h3><p>Dynamic behavior and interactive user experiences.</p></div>
+          </div>
+          <div class="card skill-card">
+            <div class="card-icon"><i class="fa-brands fa-react" aria-hidden="true"></i></div>
+            <div><h3>React</h3><p>Reusable components and scalable UI development.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="center reveal">
+          <p class="section-label">Featured Work</p>
+          <h2 class="section-title">Projects I've built</h2>
+          <p class="section-intro">A selection of projects showcasing responsive design, clean UI, and interactive front-end development.</p>
+        </div>
+        <div class="grid-3 reveal">
+          <article class="card project-card">
+            <img src="images/freudian.jpg" alt="8 Stages of Life project preview" class="project-img">
+            <div class="project-body">
+              <h3>8 Stages of Life</h3>
+              <p>An interactive educational website presenting human development stages with structured content and engaging layouts.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              <div class="project-links">
+                <a href="https://paulebaakpa.github.io/8-stages-of-life/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="projects.html" class="btn btn-secondary btn-sm">Details</a>
+              </div>
+            </div>
+          </article>
+          <article class="card project-card">
+            <img src="images/frontend.jpeg" alt="Explore Africa project preview" class="project-img">
+            <div class="project-body">
+              <h3>Explore Africa</h3>
+              <p>A visually rich, responsive platform highlighting African heritage, landmarks, and cultural experiences.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Responsive</span></div>
+              <div class="project-links">
+                <a href="https://paulebaakpa.github.io/explore-africa/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="projects.html" class="btn btn-secondary btn-sm">Details</a>
+              </div>
+            </div>
+          </article>
+          <article class="card project-card">
+            <img src="images/potfolio.jpeg" alt="Portfolio website project preview" class="project-img">
+            <div class="project-body">
+              <h3>Portfolio Website</h3>
+              <p>A modern personal portfolio template designed to showcase skills, projects, and professional presence online.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              <div class="project-links">
+                <a href="projects.html" class="btn btn-primary btn-sm">View Projects</a>
+                <a href="contact.html" class="btn btn-secondary btn-sm">Hire Me</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container reveal">
+        <p class="section-label" style="color: rgba(255,255,255,0.85);">Let's collaborate</p>
+        <h2>Have a project in mind?</h2>
+        <p>I'm available for freelance opportunities, collaborations, and front-end development roles. Let's build something great together.</p>
+        <div class="hero-actions" style="justify-content:center; margin-bottom:0;">
+          <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+          <a href="projects.html" class="btn btn-secondary">See My Work</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Paul Eba. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/paulebaakpa" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/austin-paul-603229392/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://x.com/paulebaakpa" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
       </div>
     </div>
-  </section>
+  </footer>
 
-  <!-- ================= ABOUT PREVIEW ================= -->
-  <section class="reveal about-preview">
-    <div class="preview-layout">
-      <img src="images/profile.jpeg" alt="Paul Austin Portrait Image" class="profile-img">
-      <div class="preview-text">
-        <h2>About Me</h2>
-        <p>
-          I’m a passionate front-end developer focused on building clean,
-          user-friendly, and responsive interfaces. I enjoy transforming ideas
-          into real-world digital experiences.
-        </p>
-        <a href="about.html" class="btn">Read More</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= STATS ================= -->
-  <section class="reveal stats-showcase">
-    <h2>My Impact</h2>
-    <div class="stats-grid">
-      <div class="stat-card">
-        <h3 class="counter" data-target="10">0</h3>
-        <p>Projects Built</p>
-      </div>
-      <div class="stat-card">
-       <h3 class="counter" data-target="10">0</h3>
-        <p>Technologies</p>
-      </div>
-      <div class="stat-card">
-        <h3 class="counter" data-target="10">0</h3>
-        <p>Responsive Designs</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= SKILLS ================= -->
-  <section id="skills" class="skills reveal">
-    <h2>Core Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-  <i class="fab fa-html5"></i>
-  <span>HTML5</span>
-</div>
-
-<div class="skill-card">
-  <i class="fab fa-css3-alt"></i>
-  <span>CSS3</span>
-</div>
-
-<div class="skill-card">
-  <i class="fab fa-js"></i>
-  <span>JavaScript</span>
-</div>
- </div>
-  </section>
-
-  <!-- ================= FEATURED PROJECTS ================= -->
-  <section id="projects" class="featured-projects reveal">
-    <h2>Featured Projects</h2>
-
-    <div class="project-item">
-      <div class="project-card">
-  <img src="images/encoding.jpeg" alt="">
-  
-  <div class="project-info">
-    <h3>Portfolio Website</h3>
-    
-    <p>
-      Responsive portfolio built with
-      HTML, CSS and JavaScript.
-    </p>
-
-    <div class="tags">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JS</span>
-    </div>
-
-    <a href="#">Live Demo</a>
-  </div>
-</div>
-    </div>
-
-    <div class="project-item">
-      <div class="project-image">
-        <img src="images/freudian.jpg" alt="Educational layout application interface presentation snippet">
-      </div>
-      <div class="project-text">
-        <h3>8 Stages of Life</h3>
-        <p>
-          An educational web experience explaining human development stages
-          using structured layouts and interactive content.
-        </p>
-        <a href="projects.html" class="btn">View Project</a>
-      </div>
-    </div>
-  </section>
-
-<!---=====Socials====--->
-    <div class="socials">
-
-<a href="#">
-<i class="fab fa-github"></i>
-</a>
-
-<a href="#">
-<i class="fab fa-linkedin"></i>
-</a>
-
-<a href="#">
-<i class="fab fa-x-twitter"></i>
-</a>
-
-</div>
-
-<div class="cursor-glow"></div>
-
-  <!-- ================= CTA ================= -->
-  <section class="cta reveal">
-    <div class="cta-content">
-      <h2>Let’s Work Together</h2>
-      <p>I’m available for freelance and collaboration.</p>
-      <a href="contact.html" class="btn">Get In Touch</a>
-    </div>
-  </section>
-
-</main>
-
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <p>&copy; 2026 Paul Austin &bull; Built with HTML, CSS & JavaScript</p>
-</footer>
-
-<button id="backToTop" aria-label="Back to top">↑</button>
-
-<script src="main.js"></script>
+  <button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="main.js"></script>
 </body>
 </html>

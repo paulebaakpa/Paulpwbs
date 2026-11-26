@@ -1,101 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore projects by Paul Eba, a front-end web developer building responsive websites and interactive web components.">
+  <title>Projects | Paul Eba</title>
   <link rel="icon" type="image/png" href="images/frontend.jpeg">
-  <title>Projects | Paul Austin</title>
-  <meta name="description" content="Front-end development portfolio and production project showcases by Paul Austin.">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- ================= HEADER ================= -->
-<header class="header">
-  <div class="logo">
-    <img src="images/pp.jpeg" alt="Paul Austin Logo">
-    <h2>Paul Austin</h2>
-  </div>
-
-  <nav class="nav">
-    <button id="hamburger" class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
-
-    <ul id="nav-links" class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-
-    <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
-  </nav>
-</header>
-
-<main>
-
-  <!-- ================= PROJECTS DISPLAY SECTION ================= -->
-  <section id="projects" class="reveal">
-    <h1>My Projects</h1>
-    <p class="projects-intro-text" style="text-align: center; color: var(--text-secondary); margin-bottom: 2.5rem;">
-      A curated collection of research-driven web configurations, interactive educational tools, and responsive user interfaces.
-    </p>
-
-    <div class="projects-grid-container">
-      
-      <!-- PROJECT 1: 8 Stages of Life -->
-      <a href="https://paulebaakpa.github.io/8-stages-of-life/" target="_blank" rel="noopener noreferrer" class="project-card-link">
-        <div class="card project-one">
-          <div class="overlay">
-            <h3>8 Stages of Life Website</h3>
-            <p>
-              An interactive educational layout application analyzing and detailing psychological human development frameworks.
-            </p>
-            <p class="project-tools-badge">🔧 <strong>Tools:</strong> HTML5, CSS3, JavaScript</p>
-            <span class="view-live-action">Launch Live Site &rarr;</span>
-          </div>
-        </div>
+  <header class="header">
+    <div class="nav-wrap">
+      <a href="index.html" class="logo" aria-label="Paul Eba home">
+        <img src="images/pp.jpeg" alt="Paul Eba portrait">
+        <span>Paul Eba</span>
       </a>
-
-      <!-- PROJECT 2: Explore Africa -->
-      <a href="https://paulebaakpa.github.io/explore-africa/" target="_blank" rel="noopener noreferrer" class="project-card-link">
-        <div class="card project-three">
-          <div class="overlay">
-            <h3>Explore Africa Platform</h3>
-            <p>
-              A clean, visually immersive, and highly responsive web experience highlighting regional heritage, landmarks, and cultural insights.
-            </p>
-            <p class="project-tools-badge">🔧 <strong>Tools:</strong> HTML5, CSS3, Dynamic Layouts</p>
-            <span class="view-live-action">Launch Live Site &rarr;</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- PROJECT 3: Research-Based Content Frameworks -->
-      <a href="https://github.com/paulebaakpa" target="_blank" rel="noopener noreferrer" class="project-card-link">
-        <div class="card project-two">
-          <div class="overlay">
-            <h3>Research-Based Web Layouts</h3>
-            <p>
-              A series of highly semantic web interfaces optimized for deep readability and modern typographical presentation structures.
-            </p>
-            <p class="project-tools-badge">🔧 <strong>Tools:</strong> HTML5, CSS3 Architecture</p>
-            <span class="view-live-action">Explore Repository &rarr;</span>
-          </div>
-        </div>
-      </a>
-
+      <nav class="nav" aria-label="Primary navigation">
+        <button id="hamburger" class="icon-btn menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="darkModeToggle" class="icon-btn" aria-label="Switch to dark mode">🌙</button>
+      </nav>
     </div>
-  </section>
+  </header>
 
-</main>
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Projects</p>
+        <p class="section-label">Portfolio</p>
+        <h1 class="section-title">Projects that reflect my craft.</h1>
+        <p>A collection of responsive websites and interactive web experiences built with HTML, CSS, JavaScript, and React.</p>
+      </div>
+    </section>
 
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <p>&copy; 2026 Paul Austin &bull; Built with HTML, CSS & JavaScript</p>
-</footer>
+    <section class="section">
+      <div class="container">
+        <div class="grid-3 reveal">
+          <article class="card project-card">
+            <img src="images/freudian.jpg" alt="8 Stages of Life website screenshot" class="project-img">
+            <div class="project-body">
+              <h3>8 Stages of Life</h3>
+              <p>An interactive educational website exploring human development stages through clear structure, engaging content, and responsive design.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              <div class="project-links">
+                <a href="https://paulebaakpa.github.io/8-stages-of-life/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
 
-<button id="backToTop" aria-label="Back to top">↑</button>
+          <article class="card project-card">
+            <img src="images/frontend.jpeg" alt="Explore Africa platform screenshot" class="project-img">
+            <div class="project-body">
+              <h3>Explore Africa</h3>
+              <p>A visually immersive and responsive platform showcasing African heritage, landmarks, and cultural insights with modern layouts.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Responsive</span></div>
+              <div class="project-links">
+                <a href="https://paulebaakpa.github.io/explore-africa/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
 
-<script src="main.js"></script>
+          <article class="card project-card">
+            <img src="images/potfolio.jpeg" alt="Personal portfolio website screenshot" class="project-img">
+            <div class="project-body">
+              <h3>Personal Portfolio</h3>
+              <p>A clean, modern portfolio website designed to present front-end skills, featured work, and professional contact information.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              <div class="project-links">
+                <a href="index.html" class="btn btn-primary btn-sm">View Site</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <img src="images/library.jpg" alt="Library management interface preview" class="project-img">
+            <div class="project-body">
+              <h3>Library Management UI</h3>
+              <p>A web interface concept for managing book inventories and users, focused on clear information hierarchy and usability.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              <div class="project-links">
+                <a href="contact.html" class="btn btn-secondary btn-sm">Request Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <img src="images/encoding.jpeg" alt="Web development workspace preview" class="project-img">
+            <div class="project-body">
+              <h3>Interactive Web Components</h3>
+              <p>A collection of reusable front-end components including navigation patterns, cards, forms, and interactive UI elements.</p>
+              <div class="tags"><span class="tag">JavaScript</span><span class="tag">React</span><span class="tag">CSS</span></div>
+              <div class="project-links">
+                <a href="contact.html" class="btn btn-secondary btn-sm">Discuss Project</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <img src="images/laptop.jpeg" alt="Responsive website design preview" class="project-img">
+            <div class="project-body">
+              <h3>Responsive Landing Pages</h3>
+              <p>Modern landing page templates built with mobile-first principles, strong typography, and conversion-focused layouts.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Responsive</span></div>
+              <div class="project-links">
+                <a href="contact.html" class="btn btn-secondary btn-sm">Work With Me</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container reveal">
+        <h2>Need a front-end developer?</h2>
+        <p>I can help you build responsive websites and interactive components that deliver great user experiences.</p>
+        <div class="hero-actions" style="justify-content:center; margin-bottom:0;">
+          <a href="contact.html" class="btn btn-primary">Start a Conversation</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Paul Eba. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/paulebaakpa" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/austin-paul-603229392/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://x.com/paulebaakpa" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="main.js"></script>
 </body>
 </html>

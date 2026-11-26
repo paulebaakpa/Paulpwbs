@@ -1,99 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact | Paul Austin</title>
-  <meta name="description" content="Contact Paul Austin for collaboration, project discussions, or inquiries.">
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Paul Eba, a front-end web developer based in Lagos, Nigeria, for projects, collaborations, or freelance work.">
+  <title>Contact | Paul Eba</title>
+  <link rel="icon" type="image/png" href="images/frontend.jpeg">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header class="header">
-  <nav class="nav">
-    <h2 class="logo">Paul Austin</h2>
-
-    <ul id="nav-links" class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
-    </ul>
-
-    <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
-  </nav>
-</header>
-
-<main>
-  <section id="contact" class="reveal">
-    <h1>Contact Me</h1>
-
-    <div class="contact-layout">
-      <div class="contact-media">
-        <img src="images/62ef70bd584e8396c02f984c26e8a2dd-2.jpg" alt="A modern workstation displaying code on a Mac screen">
-      </div>
-
-      <div class="contact-intro">
-        <p>Have a project, idea, or collaboration in mind? I’d love to hear from you. Reach out through the form or via my social channels.</p>
-      </div>
-
-      <!-- Semantic address wrapper for contact details -->
-      <address class="contact-info">
-        <p>
-          📧 <strong>Email:</strong>
-          <a href="mailto:paulaustin486@gmail.com">paulaustin486@gmail.com</a>
-        </p>
-
-        <p>
-          📞 <strong>Phone:</strong>
-          <a href="tel:+2348139314423">+234 813 931 4423</a>
-        </p>
-
-        <p>
-          💻 <strong>GitHub:</strong>
-          <a href="https://github.com/paulebaakpa" target="_blank" rel="noopener noreferrer">github.com/paulebaakpa</a>
-        </p>
-
-        <p>
-          💼 <strong>LinkedIn:</strong>
-          <a href="https://www.linkedin.com/in/austin-paul-603229392/" target="_blank" rel="noopener noreferrer">linkedin.com/in/austin-paul-603229392</a>
-        </p>
-
-        <p>
-          🐦 <strong>Twitter / X:</strong>
-          <a href="https://x.com/paulebaakpa" target="_blank" rel="noopener noreferrer">@paulebaakpa</a>
-        </p>
-      </address>
-
-      <!-- Accessible and structured contact form -->
-      <form id="contactForm" class="contact-form">
-        <div class="form-group">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" placeholder="" required />
-        </div>
-
-        <div class="form-group">
-          <label for="email">Your Email</label>
-          <input type="email" id="email" name="email" placeholder="" required />
-        </div>
-
-        <div class="form-group">
-          <label for="message">Your Message</label>
-          <textarea id="message" name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
-        </div>
-
-        <button class="btn primary" type="submit">Send Message</button>
-      </form>
+  <header class="header">
+    <div class="nav-wrap">
+      <a href="index.html" class="logo" aria-label="Paul Eba home">
+        <img src="images/pp.jpeg" alt="Paul Eba portrait">
+        <span>Paul Eba</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <button id="hamburger" class="icon-btn menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+        </ul>
+        <button id="darkModeToggle" class="icon-btn" aria-label="Switch to dark mode">🌙</button>
+      </nav>
     </div>
-  </section>
-</main>
+  </header>
 
-<footer class="footer">
-  <p>&copy; 2026 Paul Austin. All rights reserved.</p>
-</footer>
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Contact</p>
+        <p class="section-label">Contact</p>
+        <h1 class="section-title">Let's build something great.</h1>
+        <p>Have a project, collaboration, or opportunity in mind? I'd love to hear from you.</p>
+      </div>
+    </section>
 
-<button id="backToTop" aria-label="Back to top">↑</button>
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="card contact-info-card reveal">
+          <p class="section-label">Get in touch</p>
+          <h2 style="font-size:1.6rem; margin-bottom:0.5rem;">Contact information</h2>
+          <p style="color:var(--muted);">Feel free to reach out through any of these channels. I'm based in Lagos, Nigeria and open to remote opportunities.</p>
 
-<script src="main.js"></script>
+          <ul class="contact-list">
+            <li>
+              <div class="card-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+              <div>
+                <h3>Email</h3>
+                <a href="mailto:pauleba.dev@gmail.com">pauleba.dev@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <div class="card-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+              <div>
+                <h3>Location</h3>
+                <p>Lagos, Nigeria</p>
+              </div>
+            </li>
+            <li>
+              <div class="card-icon"><i class="fa-brands fa-github" aria-hidden="true"></i></div>
+              <div>
+                <h3>GitHub</h3>
+                <a href="https://github.com/paulebaakpa" target="_blank" rel="noopener noreferrer">github.com/paulebaakpa</a>
+              </div>
+            </li>
+            <li>
+              <div class="card-icon"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></div>
+              <div>
+                <h3>LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/austin-paul-603229392/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="social-links" aria-label="Social media links">
+            <a href="https://github.com/paulebaakpa" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/austin-paul-603229392/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://x.com/paulebaakpa" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <p class="section-label">Send a message</p>
+          <h2 style="font-size:1.6rem; margin-bottom:1.5rem;">Project inquiry</h2>
+          
+            <form
+  id="contactForm"
+  class="contact-form"
+  action="https://formspree.io/f/mwloynaz"
+  method="POST"
+  novalidate
+>
+  <input type="hidden" name="_subject" value="New Project Inquiry — Paul Eba">
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" autocomplete="name" required placeholder="John Doe">
+    </div>
+    <div class="form-group">
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" autocomplete="email" required placeholder="john@example.com">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Send Message <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+  <p id="formStatus" class="form-status" aria-live="polite"></p>
+</form>
+   </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Paul Eba. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/paulebaakpa" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/austin-paul-603229392/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://x.com/paulebaakpa" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="main.js"></script>
 </body>
 </html>

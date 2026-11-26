@@ -1,123 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Paul Austin | Front-End Developer</title>
-  <meta name="description" content="Front-end developer building clean, responsive, and research-driven web experiences.">
-  
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about Paul Eba, a front-end web developer based in Lagos, Nigeria specializing in HTML, CSS, JavaScript, and React.">
+  <title>About | Paul Eba</title>
+  <link rel="icon" type="image/png" href="images/frontend.jpeg">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="header">
+    <div class="nav-wrap">
+      <a href="index.html" class="logo" aria-label="Paul Eba home">
+        <img src="images/pp.jpeg" alt="Paul Eba portrait">
+        <span>Paul Eba</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <button id="hamburger" class="icon-btn menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active" aria-current="page">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="darkModeToggle" class="icon-btn" aria-label="Switch to dark mode">🌙</button>
+      </nav>
+    </div>
+  </header>
 
-<!-- ================= HEADER ================= -->
-<header class="header">
-  <nav class="nav">
-    <h2 class="logo">Paul Austin</h2>
-    <ul class="nav-links">
-      <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
-  </nav>
-</header>
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <p class="breadcrumb"><a href="index.html">Home</a> / About</p>
+        <p class="section-label">About Me</p>
+        <h1 class="section-title">Developer, designer at heart, problem solver.</h1>
+        <p>I'm Paul Eba — a front-end web developer based in Lagos, Nigeria, focused on building responsive websites and interactive web components.</p>
+      </div>
+    </section>
 
-<div class="container">
-
-  <!-- ================= SIDEBAR ================= -->
-  <aside class="sidebar">
-    <img src="images/profile.jpeg" alt="Paul Austin" class="profile-pic" />
-    <h1>Paul Austin</h1>
-    <p>Front-End Developer crafting clean, responsive, research-driven experiences.</p>
-
-    <h3>Core Skills</h3>
-    <ul class="sidebar-skills">
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
-      <li>Responsive Design</li>
-      <li>Git & GitHub</li>
-      <li>Research-Based Layouts</li>
-    </ul>
-
-    <a href="PaulAustin_CV.pdf" class="btn primary" download>Download CV</a>
-  </aside>
-
-  <!-- ================= MAIN CONTENT ================= -->
-  <main class="main-content">
-
-    <!-- HERO -->
-    <section id="home" class="hero reveal">
-      <div class="hero-text">
-        <h1>Hi, I’m Paul Austin</h1>
-        <p>I build clean, responsive, and research-driven web experiences.</p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn primary">View Projects</a>
-          <a href="#contact" class="btn secondary">Contact Me</a>
+    <section class="section">
+      <div class="container about-grid">
+        <div class="about-image reveal">
+          <img src="images/profile.jpeg" alt="Portrait of Paul Eba">
         </div>
-      </div>
-      <div class="hero-image">
-        <img src="images/code.jpeg" alt="code">
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="about reveal">
-      <h2>About Me</h2>
-      <p>Hi, I’m <strong>Paul Austin</strong>, a front-end developer who enjoys turning structured ideas into clean, usable web interfaces. I focus on writing simple, maintainable code while ensuring great user experience.</p>
-      <p>I’m currently improving my skills in responsive design, accessibility, and modern JavaScript workflows.</p>
-    </section>
-
-   <!-- PROJECTS -->
-    <section id="projects" class="projects reveal">
-      <h2>Featured Projects</h2>
-      <div class="projects-grid">
-        <div class="card project-one">
-          <div class="overlay">
-            <h3>8 Stages of Life</h3>
-            <p>Educational web experience presenting human development stages.</p>
-            <a href="projects.html" class="btn secondary">View Project →</a>
+        <div class="about-content reveal">
+          <p class="section-label">My Story</p>
+          <h2 class="section-title">Building the web, one component at a time.</h2>
+          <p>I'm a front-end web developer with a passion for creating clean, user-friendly digital experiences. Based in Lagos, Nigeria, I specialize in turning ideas and designs into responsive, interactive websites that people enjoy using.</p>
+          <p>My toolkit includes HTML, CSS, JavaScript, and React — technologies I use to craft everything from simple landing pages to dynamic web components. I care deeply about code quality, performance, and creating interfaces that work beautifully on every screen size.</p>
+          <p>I'm always learning, exploring new front-end techniques, and looking for opportunities to build meaningful products.</p>
+          <div class="hero-actions">
+            <a href="projects.html" class="btn btn-primary">View My Work</a>
+            <a href="contact.html" class="btn btn-secondary">Contact Me</a>
           </div>
         </div>
-        <div class="card project-two">
-          <div class="overlay">
-            <h3>Library Management</h3>
-            <p>Web-based system for managing book inventories and users.</p>
-            <a href="projects.html" class="btn secondary">View Project →</a>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="center reveal">
+          <p class="section-label">What I Do</p>
+          <h2 class="section-title">Services &amp; focus areas</h2>
+          <p class="section-intro">I bring a practical, detail-oriented approach to every project I work on.</p>
+        </div>
+        <div class="grid-3 reveal">
+          <div class="card">
+            <div class="card-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
+            <h3>Responsive Web Development</h3>
+            <p>Websites that adapt seamlessly to mobile, tablet, and desktop screens with clean layouts and smooth interactions.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><i class="fa-solid fa-puzzle-piece" aria-hidden="true"></i></div>
+            <h3>Interactive Components</h3>
+            <p>Engaging UI components built with JavaScript and React that enhance user experience and functionality.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></div>
+            <h3>Performance &amp; Best Practices</h3>
+            <p>Clean, maintainable code following modern standards for accessibility, performance, and scalability.</p>
           </div>
         </div>
-        <!-- Add more project cards here -->
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="contact reveal">
-      <h2>Contact Me</h2>
-      <p>Have a project, idea, or collaboration in mind? I’d love to hear from you.</p>
-      <div class="contact-info">
-        <p>📧 <strong>Email:</strong> <a href="mailto:paulaustin486@gmail.com">paulaustin486@gmail.com</a></p>
-        <p>📞 <strong>Phone:</strong> <a href="tel:+2348139314423">+234 813 931 4423</a></p>
-        <p>💻 <strong>GitHub:</strong> <a href="https://github.com/paulebaakpa" target="_blank">github.com/pauleba</a></p>
-        <p>💼 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/austin-paul-603229392/" target="_blank">linkedin.com/in/Austin Paul</a></p>
+    <section class="section">
+      <div class="container">
+        <div class="center reveal">
+          <p class="section-label">Technical Skills</p>
+          <h2 class="section-title">My development toolkit</h2>
+          <p class="section-intro">The core technologies I use to bring designs to life.</p>
+        </div>
+        <div class="grid-2 reveal">
+          <div class="card skill-card">
+            <div class="card-icon"><i class="fa-brands fa-html5" aria-hidden="true"></i></div>
+            <div><h3>HTML5</h3><p>Semantic structure, accessibility, and SEO-friendly markup.</p></div>
+          </div>
+          <div class="card skill-card">
+            <div class="card-icon"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i></div>
+            <div><h3>CSS3</h3><p>Flexbox, Grid, animations, and responsive design systems.</p></div>
+          </div>
+          <div class="card skill-card">
+            <div class="card-icon"><i class="fa-brands fa-js" aria-hidden="true"></i></div>
+            <div><h3>JavaScript</h3><p>DOM manipulation, ES6+, APIs, and interactive functionality.</p></div>
+          </div>
+          <div class="card skill-card">
+            <div class="card-icon"><i class="fa-brands fa-react" aria-hidden="true"></i></div>
+            <div><h3>React</h3><p>Component-based architecture, hooks, and modern UI patterns.</p></div>
+          </div>
+        </div>
       </div>
-      <form id="contactForm" class="contact-form">
-        <input type="text" id="name" placeholder="Your Name" required />
-        <input type="email" id="email" placeholder="Your Email" required />
-        <textarea id="message" placeholder="Your Message" rows="5"></textarea>
-        <button class="btn primary" type="submit">Send Message</button>
-      </form>
     </section>
 
+    <section class="cta">
+      <div class="container reveal">
+        <h2>Interested in working together?</h2>
+        <p>I'm open to freelance projects, collaborations, and new opportunities.</p>
+        <div class="hero-actions" style="justify-content:center; margin-bottom:0;">
+          <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+        </div>
+      </div>
+    </section>
   </main>
-</div>
 
-<footer class="footer">
-  <p>© 2026 Paul Austin • Built with HTML, CSS & JavaScript</p>
-</footer>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Paul Eba. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/paulebaakpa" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/austin-paul-603229392/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://x.com/paulebaakpa" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
 
-<button id="backToTop">↑</button>
-<script src="main.js"></script>
+  <button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="main.js"></script>
 </body>
 </html>
